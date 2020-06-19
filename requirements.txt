@@ -6,3 +6,4 @@ chatterbot>=1.0.0
 chatterbot-corpus>=1.2.0
 SQLAlchemy>=1.2
 gunicorn==20.0.4
+nltk
