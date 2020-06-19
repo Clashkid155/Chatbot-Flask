@@ -1,12 +1,26 @@
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
 
 app = Flask(__name__)
 
-english_bot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
-trainer = ChatterBotCorpusTrainer(english_bot)
-trainer.train("chatterbot.corpus.english")
+steam_bot = ChatBot("Forsage",
+                    storage_adapter="chatterbot.storage.SQLStorageAdapter",
+                    logic_adapters = [
+                        "chatterbot.logic.MathematicalEvaluation",
+                        "chatterbot.logic.TimeLogicAdapter",
+                        "chatterbot.logic.BestMatch"
+                    ])
+with open('tr-data.txt') as tr:
+    tr = tr.read().strip().split('\n')
+    steam_bot.train(tr)
+#trainer = ListTrainer(steam_bot)
+#trainer.train(['What\'s your name?', 'My name is Python-BOT'])
+#trainer.train(['who are you?', 'I\'m  a BOT'])
+
+trainer = ChatterBotCorpusTrainer(steam_bot)
+trainer.train("chatterbot.corpus.english",
+              "chatterbot.corpus.english.conversations")
 
 @app.route("/")
 def home():
@@ -15,7 +29,7 @@ def home():
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
-    return str(english_bot.get_response(userText))
+    return str(steam_bot.get_response(userText))
 
 
 if __name__ == "__main__":
