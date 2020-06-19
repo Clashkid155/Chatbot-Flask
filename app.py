@@ -8,7 +8,7 @@ steam_bot = ChatBot("Forsage",
                     storage_adapter="chatterbot.storage.SQLStorageAdapter",
                     logic_adapters = [
                         "chatterbot.logic.MathematicalEvaluation",
-                        "chatterbot.logic.TimeLogicAdapter",
+                        #"chatterbot.logic.TimeLogicAdapter",
                         "chatterbot.logic.BestMatch"
                     ])
 with open('tr-data.txt') as tr:
