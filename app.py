@@ -13,8 +13,8 @@ steam_bot = ChatBot("Forsage",
                     ])
 with open('tr-data.txt') as tr:
     tr = tr.read().strip().split('\n')
-    steam_bot.train(tr)
-#trainer = ListTrainer(steam_bot)
+    trainer = ListTrainer(steam_bot)
+    trainer.train(tr)
 #trainer.train(['What\'s your name?', 'My name is Python-BOT'])
 #trainer.train(['who are you?', 'I\'m  a BOT'])
 
