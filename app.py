@@ -17,7 +17,7 @@ with open('tr-data.txt') as tr:
     tr = tr.read().strip().split('\n')
     traine = ListTrainer(steam_bot)
     traine.train(tr)
-    traine.train(["Covid ", "Nigeria:"+str(covid.get_status_by_country_name("Nigeria"))[15:]])
+    traine.train(["Covid ", "Nigeria:"+str(covid.get_status_by_country_name("Nigeria"))[37:]])
 #trainer.train(['who are you?', 'I\'m  a BOT'])
 
 trainer = ChatterBotCorpusTrainer(steam_bot)
@@ -31,7 +31,10 @@ def home():
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
-    return str(steam_bot.get_response(userText))
+    if "What is" in userText:
+        return "Working"
+    else:
+        return str(steam_bot.get_response(userText))
 
 
 if __name__ == "__main__":
