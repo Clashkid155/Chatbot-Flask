@@ -38,8 +38,9 @@ body {
   border-radius: 18px;
   margin: 0 auto;
   margin-bottom: -100px;
+  outline:none;
   margin-top: 30px;
-  font-family: cursive;
+  font-family: "Sriracha";
   font-size: 17px;
 }
 
@@ -50,6 +51,7 @@ body {
   width: 3em;
   margin-bottom: -17px;
   border-radius: 50%;
+  outline:none;
 }
 
 .userText {
@@ -87,7 +89,7 @@ body {
   max-width: -130%;
   display: inline-block;
   border-radius: 13px;
-  width: 185%;
+  width: 150%;
   margin: 15px;
   margin-left: -68%;
   overflow-wrap: break-word;
@@ -130,7 +132,6 @@ body {
   margin-left: 172%;
   margin-top: -86%;
   margin:5px;*/
-  /*float: ;*/
   border-radius: 0px;
   color: #fff;
   text-decoration: none;
@@ -148,10 +149,12 @@ body {
   transform: translate(0px, 5px);
   webkit-transform: translate(0px, 5px);
   border-bottom: 1px solid;
+  top: -40px;
+  left: 16em;
 }
 input[type="submit"] {
-  font-family: "Pacifico", cursive;
-  font-size: 10px;
+ /* font-family: "Pacifico", cursive;*/
+  font-size: 5px;
 }
 
 .align-image {
