@@ -1,8 +1,8 @@
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer, ListTrainer
-from covid import Covid
-covid = Covid()
+from funk import Covi
+
 app = Flask(__name__)
 
 steam_bot = ChatBot("Forsage",
@@ -31,8 +31,8 @@ def home():
 @app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
-    if "What is" in userText:
-        return "Working"
+    if Covi(userText):
+        return Covi(userText)
     else:
         return str(steam_bot.get_response(userText))
 
