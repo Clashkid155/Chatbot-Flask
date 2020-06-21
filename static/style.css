@@ -135,8 +135,8 @@ body {
   border-radius: 0px;
   color: #fff;
   text-decoration: none;
-  top: -22px;
-  left: 35px;
+  top: -40px;
+  left: 16em;
 }
 
 .blue {
@@ -149,8 +149,6 @@ body {
   transform: translate(0px, 5px);
   webkit-transform: translate(0px, 5px);
   border-bottom: 1px solid;
-  top: -40px;
-  left: 16em;
 }
 input[type="submit"] {
  /* font-family: "Pacifico", cursive;*/
