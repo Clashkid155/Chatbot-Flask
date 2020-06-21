@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Pacifico&family=Sriracha&display=swap');
 
 body {
   background-color: #08aeea;
@@ -14,13 +14,6 @@ body {
   background-repeat: repeat-x;
   min-height: 100vh;
   letter-spacing: 0.025em;
-}
-h1 {
-  color: blue;
-  margin-top: 10%;
-  font-family: "Pacifico", cursive;
-  text-align: center;
-  font-size: 40px;
 }
 #chatbox {
   margin-left: auto;
@@ -82,7 +75,7 @@ h1 {
 
 .botText {
   color: white;
-  font-family: "Oxygen";
+  font-family: "Sriracha", cursive;
   font-size: 17px;
   line-height: 30px;
 }
