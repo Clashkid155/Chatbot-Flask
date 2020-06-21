@@ -1,81 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 body {
-    font-family: Garamond;
-}
+  background-color: #08aeea;
+  background-image: linear-gradient(
+    24deg,
+    #08aeea 0%,
+    #2af598 50%,
+    #ab64c4 100%
+  );
 
+  line-height: 1.25em;
+  margin: 0;
+  background-repeat: repeat-x;
+  min-height: 100vh;
+  letter-spacing: 0.025em;
+}
 h1 {
-    color: black;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: center;
-    font-size: 40px;
+  color: blue;
+  margin-top: 10%;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 40px;
 }
-
-h3 {
-    color: black;
-    font-size: 20px;
-    margin-top: 3px;
-    text-align: center;
-}
-
 #chatbox {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  color: blue;
+  margin-top: 60px;
 }
 
 #userInput {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    margin-top: 60px;
+  width: 40%;
+  white-space: initial;
+  margin-top: 60px;
+  padding: 4px;
 }
 
 #textInput {
-    width: 87%;
-    border: none;
-    border-bottom: 3px solid #009688;
-    font-family: monospace;
-    font-size: 17px;
+  width: 14em;
+  border-bottom: -30px;
+  border: none;
+  padding: 14px;
+  border-radius: 18px;
+  margin: 0 auto;
+  margin-bottom: -100px;
+  margin-top: 30px;
+  font-family: cursive;
+  font-size: 17px;
 }
 
 #buttonInput {
-    padding: 3px;
-    font-family: monospace;
-    font-size: 17px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 17px;
+  width: 3em;
+  margin-bottom: -17px;
+  border-radius: 50%;
 }
 
 .userText {
-    color: white;
-    font-family: monospace;
-    font-size: 17px;
-    text-align: right;
-    line-height: 30px;
+  color: white;
+  font-family: "Sriracha", cursive;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .userText span {
-    background-color: #009688;
-    padding: 10px;
-    border-radius: 2px;
+  background-color: #009688;
+  overflow-wrap: break-word;
+  box-sizing: border-box;*/
+  max-width: 130%;
+  width: 130px;
+  padding: 14px 20px;
+  margin: 6px 8px;
+  margin-left: 45%;
+  display: inline-block;
+  border-radius: 16px 16px 0 16px;
+  border: 1px solid #443f56;
 }
 
 .botText {
-    color: white;
-    font-family: monospace;
-    font-size: 17px;
-    text-align: left;
-    line-height: 30px;
+  color: white;
+  font-family: "Oxygen";
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .botText span {
-    background-color: #EF5350;
-    padding: 10px;
-    border-radius: 2px;
+  background-color: #ef5350;
+  padding: 8px;
+  border-radius: 2px;
+  max-width: -130%;
+  display: inline-block;
+  border-radius: 13px;
+  width: 185%;
+  margin: 15px;
+  margin-left: -68%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 #tidbit {
-    position:absolute;
-    bottom:0;
-    right:0;
-    width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+.boxed {
+  margin-left: auto;
+  margin-right: auto;
+  width: 22em;
+  border-radius: 25px;
+  margin-top: -58px;
+  border: 1px solid green;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  background-color: #026873;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.07) 50%,
+      transparent 50%
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, 0.19) 50%);
+  background-size: 13px, 29px, 37px, 53px;
+}
+.animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button {
+  position: relative;
+  top: 20%;*/
+  margin-left: 172%;
+  margin-top: -86%;
+  margin:5px;*/
+  /*float: ;*/
+  border-radius: 0px;
+  color: #fff;
+  text-decoration: none;
+  top: -22px;
+  left: 35px;
+}
+
+.blue {
+  background-color: #3498db;
+  border-bottom: 5px solid #2980b9;
+  text-shadow: 0px -2px #2980b9;
+}
+
+.action-button:active {
+  transform: translate(0px, 5px);
+  webkit-transform: translate(0px, 5px);
+  border-bottom: 1px solid;
+}
+input[type="submit"] {
+  font-family: "Pacifico", cursive;
+  font-size: 10px;
+}
+
+.align-image {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
