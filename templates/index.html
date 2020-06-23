@@ -3,6 +3,22 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../static/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <!--meta name="description" content="Chat bot made with flask">
+    <meta og:title="Chat bot made with flask">
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”-->
+    <!-- Primary Meta Tags -->
+    <title>ChatBot made with flask and chatterbot</title>
+    <meta name="title" content="ChatBot made with flask and chatterbot">
+    <meta name="description" content="ChatBot made written in Python ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="chatbot-flask.herokuapp.com">
+    <meta property="og:title" content="ChatBot made with flask and chatterbot">
+    <meta property="og:description" content="ChatBot made written in Python ">
+    <meta property="og:image" content="/templates/Cb.jpg">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
@@ -55,11 +71,14 @@
           }
           $("#textInput").keypress(function (e) {
             if (e.which == 13) {
-              getBotResponse();
+                getBotResponse();
             }
           });
           $("#buttonInput").click(function () {
-            getBotResponse();
+            if (document.getElementById("textInput").value (!= "" || != "  ")) {
+                getBotResponse();
+            }
+            
           });
         </script>
       </div>
